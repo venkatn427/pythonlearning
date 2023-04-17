@@ -4,6 +4,8 @@ how many dots are in the string. For example, ‘h.e.l.p.’ should return 4 dot
 should return 2 dots."""
 
 from datetime import datetime
+import math
+
 
 def count_dots(s1):
     cnt = 0
@@ -32,10 +34,15 @@ For example, if someone enters 1930, as their year of birth your function
 should return: You are 48,355,200 minutes old."""
 
 def age_in_minutes(year):
-    if year <= 100:
+    if len(str(year)) != 4:
+        return "Invalid Input"
+    elif int(year) <= 1900:
         return "Invalid Input"
     
-    
-
-print((datetime.today().year - 1930) * 365 * 1440)
+    birthdate = datetime.strptime(str(year), '%Y')
+    age = datetime.now() - birthdate  
+    mnts = age.total_seconds() / 60   
+    return math.floor(mnts)  
+ 
+print(age_in_minutes(1930))
     
