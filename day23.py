@@ -2,12 +2,13 @@
 and multiply. The calculator should take input from users. 
 The calculator should be able to handle ZeroDivisionError, NameError, and ValueError."""
 
+
 def calculator():
     try:
         num1 = float(input("Enter first number: "))
         num2 = float(input("Enter second number: "))
         operation = input("Choose an operation (+, -, *, /): ")
-        
+
         if operation == '+':
             result = num1 + num2
         elif operation == '-':
@@ -19,7 +20,7 @@ def calculator():
         else:
             print("Invalid operation")
             return
-        
+
         print(f"{num1} {operation} {num2} = {result}")
     except ZeroDivisionError:
         print("Cannot divide by zero")
@@ -28,7 +29,8 @@ def calculator():
     except NameError:
         print("Undefined variable")
 
-#calculator()
+
+# calculator()
 
 
 """s = "love live and laugh"
@@ -40,6 +42,7 @@ If a word has one upper case letter, it should be ignored. For example, the foll
 s = "Hate war love Peace" should return 12 – war (3) love (4). Hate and Peace will be ignored 
 because they have at least one uppercase letter."""
 
+
 def multiply_words(m_s):
     num = 1
     for each in m_s.split(' '):
@@ -48,5 +51,5 @@ def multiply_words(m_s):
             num = num * wl
     return num
 
+
 print(multiply_words('Hate war love Peace'))
-    

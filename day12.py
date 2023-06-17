@@ -11,13 +11,11 @@ def count_dots(s1):
     cnt = 0
     for ech in s1:
         if ech == '.':
-            cnt +=1 
+            cnt += 1
     return cnt
 
-print(count_dots('h.e.l.p.'))
-            
-    
 
+print(count_dots('h.e.l.p.'))
 
 """Write a function called age_in_minutes that tells a user how old they are in minutes. 
 Your code should ask the user to enter their year of birth, and it should return their age in 
@@ -33,16 +31,17 @@ the user's age in minutes.
 For example, if someone enters 1930, as their year of birth your function 
 should return: You are 48,355,200 minutes old."""
 
+
 def age_in_minutes(year):
     if len(str(year)) != 4:
         return "Invalid Input"
     elif int(year) <= 1900:
         return "Invalid Input"
-    
+
     birthdate = datetime.strptime(str(year), '%Y')
-    age = datetime.now() - birthdate  
-    mnts = age.total_seconds() / 60   
-    return math.floor(mnts)  
- 
+    age = datetime.now() - birthdate
+    mnts = age.total_seconds() / 60
+    return math.floor(mnts)
+
+
 print(age_in_minutes(1930))
-    

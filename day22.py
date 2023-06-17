@@ -5,14 +5,17 @@ removes the underscore and replaces it with nothing. if you pass ‘Python’ as
 for the three functions, and you call them at the same time like: 
 print(remove_underscore(add_underscore(add_hash('Python')))) it should return ‘Python’."""
 
+
 def add_hash(s):
     return '#'.join(s.split())
+
 
 def add_underscore(s):
     return s.replace('#', '_')
 
+
 def remove_underscore(s):
     return s.replace('_', '')
 
-print(remove_underscore(add_underscore(add_hash('Python')))) # should print 'Python'
 
+print(remove_underscore(add_underscore(add_hash('Python'))))  # should print 'Python'

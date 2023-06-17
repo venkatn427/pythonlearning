@@ -3,6 +3,7 @@ and return the average of those integers. If you pass 12, 90, 12, 34 as argument
 should return 37.0 as average. If you pass 12, 90 your function should return 51.0 as average.
 """
 
+
 def any_number():
     nums = input().split(',')
     l = len(nums)
@@ -10,6 +11,7 @@ def any_number():
     for each in nums:
         sum += float(each)
     return sum / l
+
 
 print(any_number())
 
@@ -19,8 +21,6 @@ reverses the outcome. For example, if you pass [10, 12, 34] and [12, 56, 78].
 Your code should return [112, 22, 68]. If the two lists are not of equal lengths,
 the code should return a message that "the lists are not of equal lengths"."""
 
+
 def add_reverse(l1, l2):
     pass
-
-
-    

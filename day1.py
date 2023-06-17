@@ -5,16 +5,16 @@ if you pass 10 as an argument, then your function should return 3.16 as the squa
 
 import math
 
+
 def divide_or_square(num):
     rem = num % 5
     if rem == 0:
         return math.sqrt(num)
     else:
         return round(rem, 2)
-    
-    
-print(divide_or_square(10))
 
+
+print(divide_or_square(10))
 
 """Write a function called longest_value that takes a 
 dictionary as an argument and returns the first longest 
@@ -22,6 +22,7 @@ value of the dictionary. For example, the following
 dictionary should return – apple as the longest value.
 fruits = {'fruit': 'apple', 'color': 'green'}
 """
+
 
 def longest_value(fruits):
     l = 0
@@ -32,7 +33,8 @@ def longest_value(fruits):
         else:
             continue
     return first_lon
-    
-fruits = {'fruit': 'apple', 'color': 'grreen','size': 'green'}
 
-print(longest_value(fruits=fruits))        
+
+fruits = {'fruit': 'apple', 'color': 'grreen', 'size': 'green'}
+
+print(longest_value(fruits=fruits))

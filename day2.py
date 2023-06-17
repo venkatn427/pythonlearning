@@ -1,4 +1,3 @@
-
 """
 Write a function called convert_add that takes a 
 list of strings as an argument and converts it to integers
@@ -13,7 +12,8 @@ def convert_add(num):
         new.append(int(each))
     return new
 
-print(convert_add(['1','2','3']))
+
+print(convert_add(['1', '2', '3']))
 
 """
 Write a function called check_duplicates that takes a 
@@ -26,6 +26,7 @@ should return apple as a duplicate and list of names
 should return "no duplicates".
 """
 
+
 def check_duplicates(fruits):
     dup = []
     seen = []
@@ -34,13 +35,14 @@ def check_duplicates(fruits):
             dup.append(each)
         else:
             seen.append(each)
-        
+
     if len(dup) == 0:
         return "no duplicates"
     else:
         return dup
-            
-fruits = ['apple', 'orange', 'banana', 'apple'] 
+
+
+fruits = ['apple', 'orange', 'banana', 'apple']
 names = ['Yoda', 'Moses', 'Joshua', 'Mark']
 
 print(check_duplicates(fruits=fruits))

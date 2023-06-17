@@ -1,6 +1,7 @@
 """Write a function called capitalize. This function takes a string as an argument and capitalizes 
 the first letter of each word. For example, ‘i like learning’ becomes ‘I Like Learning’."""
 
+
 def capitaliz(s):
     final_s = ''
     for i, n in enumerate(s):
@@ -10,13 +11,14 @@ def capitaliz(s):
             final_s += n
     return final_s
 
-print(capitaliz('i like learning'))
 
+print(capitaliz('i like learning'))
 
 """You are given a string of words. Some of the words in the string contain uppercase letters.
 Write a code that will return all the words that have an uppercase letter. 
 Your code should return a list of the words. Each word in the list should be reversed. 
 Here is how your output should look ['gninrAel', 'tUb', 'uoY', 'yLppa', 'flesRuoy', 'eVeihca'] """
+
 
 def find_upper(s):
     final_s = []
@@ -29,6 +31,5 @@ def find_upper(s):
                 continue
     return final_s
 
-print(find_upper('leArning is hard, bUt if You appLy youRself you can achieVe success'))
-                
 
+print(find_upper('leArning is hard, bUt if You appLy youRself you can achieVe success'))
